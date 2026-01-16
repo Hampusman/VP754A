@@ -1,0 +1,38 @@
+.power-supply {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+
+.power-supply .psu-upper,
+.power-supply .psu-lower {
+    grid-column: 1;
+    min-width: 520px;
+}
+
+.power-supply .error {
+    grid-column: 1 / -1;
+    text-align: start;
+}
+
+@media (max-width: 600px) {
+    .power-supply {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .power-supply .psu-upper,
+    .power-supply .psu-lower {
+        grid-column: 1;
+        min-width: 0;
+        max-width: 90vw;
+    }
+
+    .power-supply .error {
+        grid-column: 1 / -1;
+        text-align: start;
+    }
+}

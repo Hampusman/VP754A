@@ -1,0 +1,54 @@
+.card {
+    padding: 12px
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.plot-ids {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+    opacity: 0.85;
+}
+
+.plot-ids-line-placement {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.plot-ids-line {
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    opacity: 1;
+    display: inline-block;
+}
+
+.coefficients {
+    opacity: 0.75;
+    font-size: 12px;
+}
+
+.function-line {
+    width: 18px;
+    height: 2px;
+    display: inline-block;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    opacity: 0.85;
+}

@@ -1,0 +1,36 @@
+api:
+  sample_frequency: 100
+  measurement_path: null # null for default folder
+  calibration_path: 'config/calibration.yaml'
+  calibration:
+    current_start: 40
+    current_step: 10
+    current_max: 80
+    samples: 1000
+power_supply:
+  ip: [ "192.168.1.101", "192.168.1.102"]
+  port: 8462
+  buffer_size: 128
+  timeout: 10
+  limits:
+    max_voltage: 70
+    max_current: 450
+    max_power: 15000
+power_analyzer:
+  ip: "192.168.1.103"
+  port: 23
+  buffer_size: 128
+  timeout: 10
+  sampling_frequency: 50
+oscilloscope:
+  ip: "192.168.1.104"
+  port: 4000
+  buffer_size: 128
+  timeout: 10
+  sampling_frequency: 50
+arduino:
+  ip: "192.168.1.110"
+  port: 1337
+  buffer_size: 128
+  timeout: 10
+  sampling_frequency: 100

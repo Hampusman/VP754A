@@ -1,0 +1,110 @@
+.data-feed {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
+
+.channel-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.channel-card {
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.channel-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.data-feed .pwa {
+    grid-column: 1;
+    min-width: 520px;
+}
+
+.data-feed .arduino {
+    grid-column: 2;
+    min-width: 320px;
+}
+
+.data-feed .calibration-line {
+    grid-column: 1;
+    min-width: 320px;
+}
+
+.data-feed .calibration {
+    grid-column: 2;
+    min-width: 320px;
+}
+
+
+.data-feed .arduino .channel-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data-feed .error {
+    grid-column: 1 / -1;
+    text-align: start;
+}
+
+@media (max-width: 600px) {
+    .data-feed {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
+
+    .channel-grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(1, 4fr);
+        flex-direction: column;
+
+    }
+
+    .channel-card {
+        border: 1px solid #eee;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .channel-name {
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .data-feed .pwa {
+        grid-column: 1;
+        min-width: 90vw;
+    }
+
+    .data-feed .arduino {
+        grid-column: 1;
+        min-width: 90vw;
+    }
+
+    .data-feed .calibration-line {
+        grid-column: 1;
+        min-width: 90vw;
+    }
+
+    .data-feed .calibration {
+        grid-column: 1;
+        min-width: 90vw;
+    }
+
+    .data-feed .arduino .channel-grid {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .data-feed .error {
+        grid-column: 1 / -1;
+        text-align: start;
+    }
+}

@@ -1,0 +1,51 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.calibrate-button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.save-to-file {
+    margin-left: 100px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.error-text {
+    margin-top: 8px;
+    color: crimson;
+}
+
+@media (max-width: 600px) {
+    .card {
+        border: 1px solid #ddd;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .save-to-file {
+        margin-left: 20px;
+        display: inline-flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .error-text {
+        margin-top: 8px;
+        color: crimson;
+    }
+}
