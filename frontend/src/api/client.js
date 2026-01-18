@@ -1,9 +1,11 @@
 // export const API_BASE = 'http://192.168.1.110:8000'
-export const API_BASE = 'http://192.168.0.204:8000'
+// export const API_BASE = 'http://192.168.0.204:8000'
+import config from '../config/config.json'
+export const API_BASE = `http://${config.ip}:8000`
 
 
 export async function apiGet(path) {
-    const response = await fetch(`${API_BASE}/${path}`)
+    const response = await fetch(`${config.api_base}/${path}`)
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`)
     return response.json()
 }
