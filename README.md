@@ -14,7 +14,7 @@ python -m pip install -r requirements.txt
 cd ..\frontend
 npm install
 ```
-
+---
 ### 2) Start the program
 #### 1) Start the backend
 Open a terminal in the project root and run:
