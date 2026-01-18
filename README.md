@@ -1,5 +1,3 @@
-## Run locally (no Docker)
-
 ### Prerequisites
 - Python 3.x
 - Node.js + npm
